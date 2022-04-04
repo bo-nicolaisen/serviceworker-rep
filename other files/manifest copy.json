@@ -1,0 +1,32 @@
+{
+  "name": "PWA boilerplate",
+  "short_name": "PWA-Boilerplate",
+  "description": "find en hund ... finder en hund",
+  "start_url": "/index.html",
+  "scope": "/",
+  "background_color": "#003366",
+  "theme_color": "#00cc66",
+  "display": "standalone",
+
+  "icons": [{
+      "src": "./img/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    
+    },
+    {
+      "src": "./img/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+"shortcuts": [{
+"name": "page 2",
+"short_name":"p2",
+"description": "side 2 i min app",
+"url": "./pagetwo.html",
+"icons": [{"src": "./img/android-chrome-512x512.png","sizes": "512x512"}]
+
+}]
+
+}
