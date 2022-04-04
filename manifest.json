@@ -1,7 +1,7 @@
 {
-  "name": "Hent en hund til mig",
-  "short_name": "hent en hund",
-  "description": "find en hund ... finder en hund",
+  "name": "en lille hund",
+  "short_name": "en hund",
+  "description": "vis en hund ... viser en hund",
   "start_url": "/index.html",
   "scope": "/",
   "background_color": "#003366",
