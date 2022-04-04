@@ -5,7 +5,7 @@ let urlsToCache = [
 
   'assets/css/site.css',
   'assets/icons/android-chrome-512x512.png',
-  'assets/img/dog-1.jpg',
+  'assets/img/dog-2.jpg',
   'index.html',
   'info.html'
 
