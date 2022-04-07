@@ -3,7 +3,6 @@
 if ("serviceWorker" in navigator) {
 
   navigator.serviceWorker.register("sw.js")
-
     .then(registration => {
       console.log("sw registered");
 
@@ -17,6 +16,6 @@ if ("serviceWorker" in navigator) {
 } else {
 
   //browser does not support service worker
-  alert("pwa not supported");
+  alert("serviceworker not supported");
   /* do non pwa stuff here*/
 }
