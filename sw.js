@@ -1,9 +1,12 @@
 
+// array med cache names vi gerne vil bruge. opdater disse for at triggere en install
+
 const cacheAllowList = ['staticCache-v1', 'recipies-v1'];
 
 
 // her kan der evt scannes et directory på serveren ... og bygge et array til cache
 
+// static elements til cache
 let staticUrlsToCache = [
 
   'assets/css/site.css',
@@ -26,6 +29,10 @@ self.addEventListener('install', function (event) {
   console.log('installing ------------------------------------------');
 
   event.waitUntil(
+
+    /*  opret cache til static elements.hvis man bruger caches.open på en cache navn der ikke 
+     eksisterer, så oprettes cachen automatisk */
+
     caches.open(cacheAllowList[0])
 
       .then(function (cache) {
@@ -113,7 +120,7 @@ self.addEventListener('fetch', function (event) {
 // cache first then network og cache det fundne element
 
 
-self.addEventListener('fetch', function (event) {
+/* self.addEventListener('fetch', function (event) {
 
   event.respondWith(
     // søg på match i caches  
@@ -131,7 +138,7 @@ self.addEventListener('fetch', function (event) {
       });
     })
   );
-});
+}); */
 
 
 
